@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Search Here buddy</title>
+
+     <!-- CSS LINK -->
+  <link rel="stylesheet" href="./STYLE/Style.css">
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Merriweather&display=swap" rel="stylesheet">
+    
+</head>
+
+<body class="body">
+    <img class="logo" src="./Images/openx.png" srcset="./Images/Openx.png" alt="Logo">
+    <!-- OPENX LOGO -->
+
+    <form id="search-form">
+      <input class="input" type="search" placeholder="Search..." name="q" id="query">
+      <button type="submit" id="search-button">
+        <img class="search" src="./Images/search.png" alt="Search">
+      </button>
+    </form>
+    
+    <script>
+      const form = document.getElementById('search-form');
+      const queryInput = document.getElementById('query');
+    
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent the form from being submitted to the server
+    
+        const query = queryInput.value; // get the search query from the input element
+    
+        // open a new window with the Swisscows search results for the query
+        window.open(`https://www.swisscows.com/web?query=${query}`, '_blank');
+      });
+    </script>
+
+<button type="button" class="swisscow-button" style="vertical-align:middle" onclick="window.location.href='https://swisscows.com';">
+  <img class="swisscows" src="./Images/logo-home-dark.svg" alt="SwissCows">
+  <!--HOME BUTTON-->
+</button>
+    
+      
+      
+
+</body>
+
+
+
