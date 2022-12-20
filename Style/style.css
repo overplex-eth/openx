@@ -1,0 +1,47 @@
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    opacity: 1.0;
+}
+
+.body {
+    background-color: rgb(46, 56, 71);
+}
+
+.input {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid rgb(158, 215, 255);
+    background-color:rgb(46, 46, 61);
+    padding: 10px;
+    font-family: "momcake bold", sans-serif;
+    border-radius: 30px;
+}
+
+.search {
+    width: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1.0;
+    position: absolute;
+    left: 1850px;
+    top: 268px;
+
+}
+
+.search:hover {
+    color: transparent;
+}
+
+.form {
+    display: block;
+    position: absolute;
+
+}
